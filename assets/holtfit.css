@@ -27,7 +27,7 @@ a{
 }
 
 a:hover{
-    color:#9aa8bb;
+    color:#be7979;
 }
 nav{
     width:100%;
@@ -81,7 +81,7 @@ header{
 .client-name h2{
     padding-left: 20px;
     padding-right:20px;
-    padding-top: 220px;
+    padding-top: 200px;
     font-size:5rem;
     letter-spacing: 1px;
     margin-bottom:1rem;
@@ -314,6 +314,13 @@ font-size:2rem;
 
 }
 
+@media screen and (min-width: 320px){
+
+    .fsh-background{
+        display: none;
+    }
+    }
+
 @media screen and (min-width: 375px){
     .client-name h2{
         padding-left: 50px;
@@ -326,6 +333,7 @@ font-size:2rem;
         padding-top:3%;
         padding-left:8%;
     }
+ 
 }
 
 @media screen and (min-width: 425px){
@@ -339,6 +347,13 @@ font-size:2rem;
     .project-date h2{
         padding-left: 30px;
 
+    }
+
+}
+@media screen and (min-width: 520px){
+    .fsh-devices{
+        height: 70vh;
+    
     }
 
 }
@@ -440,6 +455,10 @@ font-size:2rem;
         height: 85vh;
    
     }
+    .fsh-background{
+        display: block;
+        
+        }
 }
 
 
@@ -468,6 +487,8 @@ font-size:2rem;
 
     .info-description{
         padding-top:20px;
+        padding-left: 120px;
+        padding-right: 120px;
     }
     .fsh-devices{
         height: 85vh;
@@ -479,6 +500,13 @@ font-size:2rem;
     }
 }
 
+@media screen and (min-width: 1200px){
+    .fsh-devices{
+        height: 120vh;
+    
+    }
+
+}
 @media screen and (min-width: 1440px) {
 
 
@@ -486,7 +514,7 @@ font-size:2rem;
          height:80vh;
      }
     .client-name h2{
-        margin-top:-20px;
+    
         padding-left: 300px;
         font-size:100px;
         line-height: 110px;
@@ -634,7 +662,7 @@ font-size:2rem;
 
     }
    .client-name h2{
-       margin-top:70px;
+       margin-top:20px;
        padding-left: 400px;
        font-size:100px;
        line-height: 110px;

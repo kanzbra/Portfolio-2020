@@ -27,7 +27,7 @@ a{
 }
 
 a:hover{
-    color:#9061e8;
+    color:#e8a261;
 }
 nav{
     width:100%;
@@ -311,6 +311,20 @@ font-size:2rem;
 
 }
 
+
+
+@media screen and (min-width: 320px){
+
+.fsh-background{
+    display: none;
+}
+
+.fsh-devices{
+
+    height: 40vh;
+}
+}
+
 @media screen and (min-width: 375px){
     .client-name h2{
         padding-left: 50px;
@@ -323,6 +337,13 @@ font-size:2rem;
         padding-top:3%;
         padding-left:8%;
     }
+    .fsh-background{
+        display: none;
+    }
+    .fsh-devices{
+        height: 45vh;
+    }
+
 }
 
 @media screen and (min-width: 425px){
@@ -337,9 +358,21 @@ font-size:2rem;
         padding-left: 30px;
 
     }
+    .fsh-background{
+        display: none;
+    }
+
+
 
 }
 
+@media screen and (min-width: 520px){
+    .fsh-devices{
+        height: 70vh;
+    
+    }
+
+}
 @media screen and (min-width: 768px){
     #horizontalLineOne{
         width:200px;
@@ -437,6 +470,11 @@ font-size:2rem;
         height: 85vh;
    
     }
+
+.fsh-background{
+display: block;
+
+}
 }
 
 
@@ -465,6 +503,8 @@ font-size:2rem;
 
     .info-description{
         padding-top:20px;
+        padding-left: 120px;
+        padding-right: 120px;
     }
     .fsh-devices{
         height: 85vh;
@@ -475,7 +515,13 @@ font-size:2rem;
         margin-left:-30px;
     }
 }
+@media screen and (min-width: 1200px){
+    .fsh-devices{
+        height: 120vh;
+    
+    }
 
+}
 @media screen and (min-width: 1440px) {
 
 

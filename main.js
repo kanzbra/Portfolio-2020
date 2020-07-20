@@ -17,11 +17,11 @@ $(document).ready(function () {
         $("#caseTwo").hover(function(){
         $("video").attr("src","./images/projects/giani/Giani.mp4").load().play();
     });
-        $("#caseThree").hover(function(){
-        $("video").attr("src","./images/projects/holtfit/HoltFIt.mp4").load().play();
+    $("#caseThree").hover(function(){
+        $("video").attr("src","./images/projects/giani/hf.mp4").load().play();
     });
     });
-    0
+    
 
 
     $(window).on('beforeunload', function() { $("video").hide(); }); 

@@ -27,7 +27,7 @@ a{
 }
 
 a:hover{
-    color:#449e9e;
+    color:#ff5757;
 }
 nav{
     width:100%;
@@ -177,7 +177,7 @@ header{
 
 .fsh-devices{
     background-image: url('../images/backgrounds/gianiBackground.png');
-    height: 50vh;
+    height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -311,6 +311,13 @@ font-size:2rem;
 
 }
 
+@media screen and (min-width: 320px){
+
+    .fsh-background{
+        display: none;
+    }
+    }
+
 @media screen and (min-width: 375px){
     .client-name h2{
         padding-left: 50px;
@@ -323,6 +330,12 @@ font-size:2rem;
         padding-top:3%;
         padding-left:8%;
     }
+    .fsh-devices{
+        height: 45vh;
+    
+    }
+
+ 
 }
 
 @media screen and (min-width: 425px){
@@ -337,7 +350,16 @@ font-size:2rem;
         padding-left: 30px;
 
     }
+ 
 
+
+
+}
+@media screen and (min-width: 520px){
+.fsh-devices{
+    height: 60vh;
+
+}
 }
 
 @media screen and (min-width: 768px){
@@ -387,7 +409,7 @@ font-size:2rem;
     }
    
     .fsh-devices{
-        height: 80vh;
+        height: 70vh;
    
     }
     .vertical-line{
@@ -437,6 +459,10 @@ font-size:2rem;
         height: 85vh;
    
     }
+    .fsh-background{
+        display: block;
+        
+        }
 }
 
 
@@ -446,7 +472,7 @@ font-size:2rem;
         left:7.5%;
     }
 .client-name h2{
-    margin-top:-50px;
+    margin-top:-0px;
     padding-left: 200px;
     font-size:100px;
     line-height: 110px;
@@ -465,6 +491,8 @@ font-size:2rem;
 
     .info-description{
         padding-top:20px;
+        padding-left: 120px;
+        padding-right: 120px;
     }
     .fsh-devices{
         height: 85vh;
@@ -476,6 +504,13 @@ font-size:2rem;
     }
 }
 
+@media screen and (min-width: 1100px){
+    .fsh-devices{
+        height: 120vh;
+    
+    }
+
+}
 @media screen and (min-width: 1440px) {
 
 
@@ -483,7 +518,7 @@ font-size:2rem;
          height:80vh;
      }
     .client-name h2{
-        margin-top:-20px;
+        margin-top:0px;
         padding-left: 300px;
         font-size:100px;
         line-height: 110px;
@@ -632,7 +667,7 @@ font-size:2rem;
 
     }
    .client-name h2{
-       margin-top:70px;
+
        padding-left: 400px;
        font-size:100px;
        line-height: 110px;

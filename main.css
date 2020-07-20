@@ -13,6 +13,7 @@ html{
 
 body::-webkit-scrollbar {
     display: none;
+
 }
 body{
     width:100%;
@@ -22,6 +23,7 @@ body{
     background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     border: 5px black solid;
+    overflow-x: hidden;
 
 }
 
@@ -194,7 +196,7 @@ img{
     background-color: black;
     position: fixed;
     top:0;
-    z-index: 2;
+    z-index: 4;
    
 }
 
@@ -253,7 +255,7 @@ header{
     border-bottom-left-radius: 100%;
     box-shadow: 1px 3px 4px rgb(56, 55, 55);
     transition: all 350ms cubic-bezier(1,1,1,1);
-    z-index:2;
+    z-index:4;
 }
 
 
@@ -264,21 +266,24 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
+
 }
 
 li{
-    margin: 0 2rem;
+    margin: 0 5rem;
+    line-height: 50px;
 }
 
 .nav-link{
     font-family: 'Raleway', sans-serif;
-    font-size:1.7rem;
-    padding:1rem;
+    font-size:2.3rem;
+    padding:2rem;
+
 }
 
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(to top, #feb47b, #ff7e5f);
+    background: linear-gradient(to top, #A7BFE8, #6190E8);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
@@ -299,7 +304,7 @@ li{
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    z-index:1500;
+    z-index:6;
     transition:transform 650ms ease-out;
 }
 
@@ -498,11 +503,12 @@ li{
     width:100%;
     height:100vh;
     background-size: cover;
-    background-image: url('./images/backgrounds/projectBackground.png');
+    background-image: url('./images/backgrounds/_Background\ \(1\).png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     border-bottom: 5px solid black;
+    background-color: rgb(220, 226, 243);
     
 
 }
@@ -699,7 +705,7 @@ footer{
     right:5rem;
     border-radius: 100%;
     text-align: center;
-    background-color: ghostwhite;
+    background-color: rgb(212, 212, 216);
     color:black;
     display: flex;
     -webkit-animation: pulse 2s infinite;
@@ -730,16 +736,18 @@ footer{
 
 
     .menu-toggler{
-
-
-        right: 6rem;
+        right: 2rem;
         width: 4rem;
         height: 3rem;
+        
     }
 
-    .nav-list{
-       flex-direction: column;
+    .nav-link{
+
+        padding:4rem;
+    
     }
+
 
     .mini-nav h1{
         color:white;
@@ -797,10 +805,13 @@ header{
 
 .about{
     height:140vh;
+    background-size: contain;
+
+
 }
 .about-details{
     flex:1;
-    background: rgb(44, 123, 242, 0.4); 
+    background-color: rgb(44, 123, 242, 0.4); 
     border-radius: 2%;
     box-shadow: 1px 4px 4px rgb(56, 55, 55);
 }
@@ -870,12 +881,13 @@ display: none;
     line-height: 30px;
 }
 
-.up{
+.up-button{
     position: absolute;
     width:3rem;
     height:3rem;
-    top: -3rem;
-    right: -4rem;
+    top: -2rem;
+    right:3rem;
+
 }
 
 .softIcons{
@@ -885,18 +897,20 @@ display: none;
 
 
 @media screen and (min-width: 321px){
-
+ 
 
     .menu-toggler{
-        right: 3rem;
+        right: 2rem;
         width: 4rem;
         height: 3rem;
     }
 
-    .nav-list{
-       flex-direction: column;
-    }
+    .nav-link{
 
+        padding:6rem;
+    
+    }
+  
     .mini-nav h1{
         color:white;
          font-size:11px;
@@ -952,10 +966,12 @@ header{
 
 .about{
     height:130vh;
+    background-size: contain;
+
 }
 .about-details{
     flex:1;
-    background: rgb(44, 123, 242, 0.4); 
+background-color: rgb(44, 123, 242, 0.4); 
     border-radius: 2%;
     box-shadow: 1px 4px 4px rgb(56, 55, 55);
 }
@@ -1025,12 +1041,12 @@ display: none;
     line-height: 30px;
 }
 
-.up{
+.up-button{
     position: absolute;
     width:3rem;
     height:3rem;
-    top: -4rem;
-    right: -2rem;
+    top: -1rem;
+    right: 2rem;
 }
 
 .softIcons{
@@ -1040,6 +1056,11 @@ display: none;
 
 @media screen and (min-width: 401px){
 
+    .nav-link{
+
+        padding:10rem;
+    
+    }
 
     .menu-toggler{
 
@@ -1049,9 +1070,7 @@ display: none;
         height: 3rem;
     }
 
-    .nav-list{
-       flex-direction: column;
-    }
+
 
     .mini-nav h1{
         color:white;
@@ -1107,7 +1126,11 @@ header{
     margin-top:70px;
     margin-left:-2px;
 }
+.about{
 
+    background-size: contain;
+
+}
 
 .about-details{
     flex:1;
@@ -1181,12 +1204,12 @@ display: none;
     line-height: 30px;
 }
 
-.up{
+.up-button{
     position: absolute;
     width:3rem;
     height:3rem;
-    top: -4rem;
-    right: 0rem;
+    top: -2rem;
+    right: 3rem;
 
 }
 
@@ -1194,11 +1217,49 @@ display: none;
     display: none;
 }
 }
+@media screen and (min-width: 471px){
+    .nav-link{
 
+        padding:12rem;
+    
+    }
+}
+
+@media screen and (min-width: 501px){
+
+
+    .nav-link{
+
+        padding:.5rem;
+    
+    }  
+.mouse-scroll {
+    top: 78%;
+    padding-left:895px;
+    
+}
+
+.mouse {
+    width: 36px;
+    height: 63px;
+}
+
+.mouse-message { 
+    margin-top:70px;
+    margin-left:-2px;
+}
+}
 @media screen and (min-width: 768px){
+
 
     .header{
         height:100vh;
+    }
+
+    .nav-link{
+
+        padding:2rem;
+    
     }
     .mini-nav h1{
 
@@ -1212,6 +1273,7 @@ display: none;
         right: 4rem;
         width: 5rem;
         height: 4rem;
+
     }
 .landing-text h1{
     font-size:14rem;
@@ -1269,9 +1331,14 @@ display: none;
         display: flex;
         flex:1;
         margin-left: -15px;
+        height: 461px; width: 280px;
 
     }
-    
+    #phone{
+        width:100%;
+    }
+
+
     #fshWS{
     
         position: absolute;
@@ -1297,7 +1364,7 @@ display: none;
         font-size: 2rem;   
     }
 
-.up{
+.up-button{
 
     width:4.5rem;
     height:4.5rem;
@@ -1322,7 +1389,7 @@ display: none;
         border: 3px rgb(24, 23, 23) solid;
     
     }
-
+    
     header{
         width:100%;
         height:100vh;
@@ -1381,6 +1448,8 @@ display: none;
         --background-color: linear-gradient(145deg, rgb(254, 180, 123), #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
     .about{
+   
+
         background-image: url('./images/backgrounds/_Background\ \(1\).png');
         border: none;
 
@@ -1389,7 +1458,7 @@ display: none;
  
     
     .about-details{
-
+        background-color: none;
         background: none;
         box-shadow:none;
         border-radius: 2%;
@@ -1534,7 +1603,7 @@ video{
     flex:1;
  
 }
-.up{
+.up-button{
 
     width:4.5rem;
     height:4.5rem;
