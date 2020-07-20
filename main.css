@@ -73,6 +73,40 @@ img{
 }
 
 
+  .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #95b7e9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
 
 /*End reusable*/
 
@@ -271,13 +305,14 @@ header{
 
 li{
     margin: 0 5rem;
-    line-height: 50px;
+    line-height: 30px;
+
 }
 
 .nav-link{
     font-family: 'Raleway', sans-serif;
     font-size:2.3rem;
-    padding:2rem;
+    padding:rem;
 
 }
 
@@ -742,16 +777,14 @@ footer{
         
     }
 
-    .nav-link{
-
-        padding:4rem;
-    
+    .nav-list{
+        flex-direction: column;
     }
 
 
     .mini-nav h1{
         color:white;
-         font-size:11px;
+         font-size:12px;
          padding-top: 7px;
  
 }
@@ -905,11 +938,10 @@ display: none;
         height: 3rem;
     }
 
-    .nav-link{
-
-        padding:6rem;
-    
+    .nav-list{
+        flex-direction: column;
     }
+
   
     .mini-nav h1{
         color:white;
@@ -1056,11 +1088,10 @@ display: none;
 
 @media screen and (min-width: 401px){
 
-    .nav-link{
-
-        padding:10rem;
-    
+    .nav-list{
+        flex-direction: column;
     }
+
 
     .menu-toggler{
 
@@ -1218,21 +1249,19 @@ display: none;
 }
 }
 @media screen and (min-width: 471px){
-    .nav-link{
-
-        padding:12rem;
-    
+    .nav-list{
+        flex-direction: column;
     }
+
 }
 
 @media screen and (min-width: 501px){
 
 
-    .nav-link{
+    .nav-list{
+        flex-direction: column;
+    }
 
-        padding:.5rem;
-    
-    }  
 .mouse-scroll {
     top: 78%;
     padding-left:895px;
@@ -1249,18 +1278,17 @@ display: none;
     margin-left:-2px;
 }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
 
     .header{
         height:100vh;
     }
 
-    .nav-link{
-
-        padding:2rem;
-    
+    .nav-list{
+        flex-direction: row;
     }
+    
     .mini-nav h1{
 
          font-size:15px;

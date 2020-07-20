@@ -24,7 +24,7 @@
 
     <header class="header" id="header">
         <div class="mini-nav">
-            <h1>contact me for work - contact me for work - contact me for work </h1>
+            <h1> - contact me for work - contact me for work - </h1>
         </div>
         <div class="main-logo">
             <img src="">
@@ -39,8 +39,14 @@
             <ul class="nav-list">
                 <li>
                     <a href="./index.html" class="nav-link" data-toggle="collapse">Home</a>
+                </li>
+                <li>
                     <a href="#about" class="nav-link" data-toggle="collapse">About Me</a>
+                </li>
+                <li>
                     <a href="#portfolio" class="nav-link" data-toggle="collapse">Portfolio</a>
+                </li>
+                 <li>
                     <a href="./resume.html" class="nav-link" data-toggle="collapse">Resume</a>
                 </li>
             </ul>
@@ -136,7 +142,7 @@
         <div class="container" id="portfolio-container">
                 
         <div class="project-Video" id="video">
-            <video autoplay="autoplay" muted preload loop id="fshWS" class="responsive" poster="./images/projects/giani/Giani.png">
+            <video autoplay="autoplay" muted preload loop id="fshWS" class="responsive" poster="./images/projects/giani/phoneviewgiani.png" >
                 <source src="./images/projects/fsh/FSH.mp4" type="video/mp4">
             </video>
         </div>
@@ -196,6 +202,9 @@
   
  </section>
 
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
 
 
 <footer class="copyright">
@@ -209,7 +218,11 @@
 <script>
   AOS.init();
 </script>
-
+<script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
 </body>
 
 
