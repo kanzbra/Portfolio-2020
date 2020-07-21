@@ -41,12 +41,12 @@ header{
 @media (min-width: 320px){
 	.navbar-brand{
 		margin-left:20px;
-		padding-top:10px;
+		padding-top:0px;
 	}
 	
 	#mainLogo{
 		width:60px;   
-		padding-top:10px;
+		padding-top:15px;
 	
 	}
 
@@ -57,12 +57,12 @@ header{
 @media (min-width: 576px) {
 	.navbar-brand{
 		margin-left:80px;
-		padding-top:5px;
+		padding-top:0px;
 	}
 	
 	#mainLogo{
 		width:80px;   
-		padding-top:10px;
+		padding-top:0px;
 	
 	}
 
