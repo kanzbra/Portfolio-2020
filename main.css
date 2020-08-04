@@ -839,6 +839,7 @@ header{
 .about{
     height:140vh;
     background-size: contain;
+    background-image: none;
 
 
 }
@@ -926,6 +927,10 @@ display: none;
 .softIcons{
     display: none;
 }
+
+.social-media{
+    width:300px;
+}
 }
 
 
@@ -998,6 +1003,7 @@ header{
 
 .about{
     height:130vh;
+    background-image: none;
     background-size: contain;
 
 }
@@ -1329,6 +1335,15 @@ display: none;
     top: 82%;
     padding-left:1345px;
 }
+
+.about{
+   
+
+    background-image: url('./images/backgrounds/_Background\ \(1\).png');
+    border: none;
+
+}
+
 
 .about-heading h1{
     font-size:10rem;
