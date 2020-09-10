@@ -683,6 +683,7 @@ footer{
     background-color: black;
     color: ghostwhite;
     height:20px;
+    margin-top: 55px;
 }
 
 .copyright{
@@ -1396,9 +1397,11 @@ display: none;
         margin-left: -15px;
         height: 461px; width: 280px;
 
+
     }
     #phone{
         width:100%;
+      
     }
 
 
